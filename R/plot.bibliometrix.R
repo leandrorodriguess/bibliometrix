@@ -62,7 +62,7 @@ plot.bibliometrix<-function(x, ...){
           ,axis.line.x = element_line(color="black",linewidth=0.5)
           ,axis.line.y = element_line(color="black",linewidth=0.5)
     ) +
-    annotation_custom(logo, xmin = xcoord[1], xmax = xcoord[2], ymin = ycoord[1], ymax = ycoord[2]) +
+    #annotation_custom(logo, xmin = xcoord[1], xmax = xcoord[2], ymin = ycoord[1], ymax = ycoord[2]) +
     coord_flip()
   plot(g)
   
@@ -107,7 +107,7 @@ plot.bibliometrix<-function(x, ...){
             ,axis.line.x = element_line(color="black",linewidth=0.5)
             ,axis.line.y = element_line(color="black",linewidth=0.5)
       ) +
-      annotation_custom(logo, xmin = xcoord[1], xmax = xcoord[2], ymin = ycoord[1], ymax = ycoord[2]) + 
+      #annotation_custom(logo, xmin = xcoord[1], xmax = xcoord[2], ymin = ycoord[1], ymax = ycoord[2]) + 
       coord_flip()) 
     
   
@@ -151,7 +151,7 @@ plot.bibliometrix<-function(x, ...){
           ,axis.text.x = element_text(size=10, angle = 90)
           ,axis.line.x = element_line(color="black",linewidth=0.5)
           ,axis.line.y = element_line(color="black",linewidth=0.5)
-    ) + annotation_custom(logo, xmin = xcoord[1], xmax = xcoord[2], ymin = ycoord[1], ymax = ycoord[2]) 
+    ) #+ annotation_custom(logo, xmin = xcoord[1], xmax = xcoord[2], ymin = ycoord[1], ymax = ycoord[2]) 
   
   plot(g)
   graphs$AnnualScientProd=g
@@ -206,7 +206,7 @@ plot.bibliometrix<-function(x, ...){
           ,axis.text.x = element_text(size=10, angle = 90)
           ,axis.line.x = element_line(color="black",linewidth=0.5)
           ,axis.line.y = element_line(color="black",linewidth=0.5)
-    ) + annotation_custom(logo, xmin = xcoord[1], xmax = xcoord[2], ymin = ycoord[1], ymax = ycoord[2]) 
+    ) #+ annotation_custom(logo, xmin = xcoord[1], xmax = xcoord[2], ymin = ycoord[1], ymax = ycoord[2]) 
   
   plot(g)
   graphs$AverArtCitperYear=g
@@ -236,7 +236,7 @@ plot.bibliometrix<-function(x, ...){
           ,axis.text.x = element_text(size=10, angle = 90)
           ,axis.line.x = element_line(color="black",linewidth=0.5)
           ,axis.line.y = element_line(color="black",linewidth=0.5)
-    )  + annotation_custom(logo, xmin = xcoord[1], xmax = xcoord[2], ymin = ycoord[1], ymax = ycoord[2]) 
+    )  #+ annotation_custom(logo, xmin = xcoord[1], xmax = xcoord[2], ymin = ycoord[1], ymax = ycoord[2]) 
   plot(g)
   graphs$AverTotCitperYear=g
   } else {

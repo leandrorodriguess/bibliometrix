@@ -96,8 +96,8 @@ authorProdOverTime <- function(M,k=10, graph=TRUE){
          y="Year")+
     geom_line(data=df2,aes(x = Author, y = year, group=Author),size=1.0, color="firebrick4", alpha=0.3 )+
     scale_x_discrete(limits = rev(levels(df2$Author)))+
-    coord_flip() +
-    annotation_custom(logo, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
+    coord_flip() #+
+    #annotation_custom(logo, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
   
   
   df$DOI=as.character(df$DOI)

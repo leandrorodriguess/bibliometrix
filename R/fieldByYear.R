@@ -102,7 +102,7 @@ fieldByYear <- function(M,
           ,axis.text.x = element_text(face="bold", angle = 90)#, size=labelsize)
           ,axis.text.y = element_text(face="bold",)
           ,axis.line.x = element_line(color="black", linewidth=0.5)
-    ) + annotation_custom(logo, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
+    ) #+ annotation_custom(logo, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
  
    if (!isTRUE(dynamic.plot)){
     g <- g+geom_vline(xintercept=nrow(df)-(which(c(diff(df$year_med))==-1)-0.5), color="grey70",alpha=0.6, linetype=6)+

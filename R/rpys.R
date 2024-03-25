@@ -133,7 +133,7 @@ g=ggplot(RPYS, aes(x=Year ,y=Citations,text=paste("Year: ",Year,"\nN. of Referen
         ,axis.text.x = element_text(size=8,angle = 90)
         ,axis.line.x = element_line(color="black", size=0.5)
         ,axis.line.y = element_line(color="black", size=0.5)
-  ) + annotation_custom(logo, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
+  ) #+ annotation_custom(logo, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
 
     if (isTRUE(graph)){plot(g)}
     CR$Reference <- reduceRefs(CR$Reference)

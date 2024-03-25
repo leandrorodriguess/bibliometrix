@@ -67,7 +67,7 @@ bradford<-function(M){
           ,axis.title.y = element_text(vjust = 1, angle = 90)
           ,axis.title.x = element_text(hjust = 0)
           ,axis.text.x = element_text(angle=90,hjust=1,size=8,face="bold")
-    ) + annotation_custom(logo, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
+    )# + annotation_custom(logo, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
   
   results=list(table=df,graph=g)
   return(results)

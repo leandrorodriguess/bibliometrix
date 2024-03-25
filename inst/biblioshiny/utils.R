@@ -646,7 +646,7 @@ AffiliationOverTime <- function(values,n){
           ,axis.text.x = element_text(size=10, angle = 90)
           ,axis.line.x = element_line(color="black",linewidth=0.5)
           ,axis.line.y = element_line(color="black",linewidth=0.5)
-    ) + annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
+    ) #+ annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
   return(values)
 }
 
@@ -711,7 +711,7 @@ CountryOverTime <- function(values,n){
           ,axis.text.x = element_text(size=10, angle = 90)
           ,axis.line.x = element_line(color="black",linewidth=0.5)
           ,axis.line.y = element_line(color="black",linewidth=0.5)
-    ) + annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
+    ) #+ annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
   return(values)
 }
 
@@ -822,7 +822,7 @@ mapworld <- function(M, values){
           ,legend.position = "none"
           # ,legend.background = element_blank()
           # ,legend.key = element_blank()
-    ) + annotation_custom(values$logoGrid, xmin = 143, xmax = 189.5, ymin = -69, ymax = -48) 
+    ) #+ annotation_custom(values$logoGrid, xmin = 143, xmax = 189.5, ymin = -69, ymax = -48) 
   
   results=list(g=g,tab=tab)
   return(results)
@@ -1554,7 +1554,7 @@ hist2vis<-function(net, labelsize = 2, nodesize= 2, curved=FALSE, shape="dot", o
   vn$nodes$font.size[nr+1] <- vn$nodes$font.size[nr]
   vn$nodes$group[nr+1] <- "logo"
   vn$nodes$shape[nr+1] <- "image"
-  vn$nodes$image[nr+1] <- "logo.jpg"
+  vn$nodes$image[nr+1] <- ""
   vn$nodes$fixed.x <- TRUE
   vn$nodes$fixed.y <- FALSE
   vn$nodes$fixed.y[nr+1] <- TRUE

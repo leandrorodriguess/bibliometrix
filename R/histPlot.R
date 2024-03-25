@@ -267,8 +267,7 @@ histPlot<-function(histResults, n=20, size = 5, labelsize = 5, remove.isolates =
   x <- c(xmax-0.02-diff(c(xmin,xmax))*0.125, xmax-0.02)
   y <- c(ymin,ymin+diff(c(ymin,ymax))*0.125)+0.02
   
-  g <- g +
-    annotation_custom(logo, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
+  g <- g #+ annotation_custom(logo, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
 
   label <- data.frame(Label = names(V(bsk.network)))
   Data <-  histResults$histData

@@ -1290,8 +1290,8 @@ To ensure the functionality of Biblioshiny,
             ,axis.text.x = element_text(vjust = 1, angle = 90)
             ,axis.line.x = element_line(color="black",linewidth=0.5)
             ,axis.line.y = element_line(color="black",linewidth=0.5)
-      ) +
-      annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
+      ) #+
+      #annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
     values$ASPplot <- g
     
     plot.ly(g,flip=FALSE, side="r", aspectratio=1.7, size=0.10)
@@ -1381,8 +1381,8 @@ To ensure the functionality of Biblioshiny,
             ,axis.title.x = element_text(hjust = 0)
             ,axis.line.x = element_line(color="black",linewidth=0.5)
             ,axis.line.y = element_line(color="black",linewidth=0.5)
-      ) + 
-      annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
+      ) #+ 
+      #annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
     values$ACpYplot <- g
     plot.ly(g,flip=FALSE, side="r", aspectratio=1.7, size=0.10)
   })
@@ -2238,8 +2238,8 @@ To ensure the functionality of Biblioshiny,
             ,axis.title.x = element_text(hjust = 0)
             ,axis.line.x = element_line(color="black",linewidth=0.5)
             ,axis.line.y = element_line(color="black",linewidth=0.5)
-      ) +
-      annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
+      ) #+
+      #annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
     values$LLplot <- g
     plot.ly(g,flip=FALSE, side="r", aspectratio=1.4, size=0.10)
   })
@@ -2501,8 +2501,8 @@ To ensure the functionality of Biblioshiny,
                                ,axis.title.x = element_text(hjust = 0)
                                ,axis.line.x = element_line(color="black",linewidth=0.5)
                          ) +
-                         coord_flip()) + 
-      annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
+                         coord_flip()) #+ 
+      #annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
     
     values$MRCOplot <- g
     return(g)
@@ -3538,8 +3538,8 @@ To ensure the functionality of Biblioshiny,
             ,axis.text.x = element_text(size=10, angle = 90)
             ,axis.line.x = element_line(color="black",linewidth=0.5)
             ,axis.line.y = element_line(color="black",linewidth=0.5)
-      ) + 
-      annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
+      ) #+ 
+      #annotation_custom(values$logoGrid, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
     
     values$WDplot <- g
     return(g)

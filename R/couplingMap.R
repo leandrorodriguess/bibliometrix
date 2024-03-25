@@ -191,8 +191,8 @@ couplingMap <- function(M, analysis = "documents", field="CR", n=500, label.term
           axis.ticks.x=element_blank(),
           axis.text.y=element_blank(),
           axis.ticks.y=element_blank()
-    ) +
-    annotation_custom(logo, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
+    ) #+
+    #annotation_custom(logo, xmin = x[1], xmax = x[2], ymin = y[1], ymax = y[2]) 
   
 
   
